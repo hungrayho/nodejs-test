@@ -29,7 +29,7 @@ export default class PersonInput extends ReadableStreamDefaultController.Compone
             <form onSubmit={this.handleSubmit}>
                 <label>
                     Person Name:
-                    <input >
+                    <input type="text" name="name" onChange={this.handleChange}/>
                 </label>
                 <button type="submit">
                     Add
