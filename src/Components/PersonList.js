@@ -16,7 +16,7 @@ export default class PersonList extends ReadableStreamDefaultController.Componen
     render() {
         return (
             <ul>
-                { this.state.persons.map(person => <li>{person.name}</li>)}
+                { this.state.persons.map(person => <li key={person.id}>{person.name}</li>)}
             </ul>
         )
     }
